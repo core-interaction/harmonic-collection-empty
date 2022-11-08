@@ -6,7 +6,7 @@ layout: default
 	<h1>{{ site.title }}</h1>
 </header>
 <main>
-	<p>You can use this Jekyll template for its basic, repeated structure—pasting in your HTML and styles but making a repeated navigation easier.</p>
+	<p>You can use this Jekyll template for its basic, repeated structure—pasting in your HTML and styles but making a repeated navigation easier.</p>
 	<h2>Entries</h2>
 	<ul>
 		{% assign entries = site.pages | where: "layout", "entry"  | sort: "path" %}
