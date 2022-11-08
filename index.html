@@ -9,7 +9,7 @@ layout: default
 	<p>You can use this Jekyll template for its basic, repeated structure—pasting in your HTML and styles but making a repeated navigation easier.</p>
 	<h2>Entries</h2>
 	<ul>
-		{% assign entries = site.pages | where: "layout", "entry"  | sort: "path" %}
+		{% assign entries = site.pages | where: "layout", "entry" | sort: "order" %}
 		{% for entry in entries %}
 			<li>
 				<a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>

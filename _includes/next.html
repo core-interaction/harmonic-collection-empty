@@ -1,4 +1,4 @@
-{%- assign entries = site.pages | where: "layout", "entry"  | sort: "path" -%}
+{%- assign entries = site.pages | where: "layout", "entry" | sort: 'order' -%}
 {%- for entry in entries %}
 	{%- if entry.url == page.url %}
 		{%- assign current = forloop.index -%}
